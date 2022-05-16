@@ -1,3 +1,167 @@
 .page-home{
-    border: 0px;
-}
+    margin: 0px;
+
+    @import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300&display=swap');
+
+    .cont-main-faixa1{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 41.7em;
+        background-image: url('../../assets/images/Fundo\ F1\ \(HOME\).png');
+    }
+    .link-login{
+        font-family: 'Baloo 2', cursive;
+        text-decoration: none;
+        margin-left: 3em;
+        color: white;
+        opacity: 100%;
+    }
+    .link-contato{
+        font-family: 'Baloo Tamma 2', cursive;
+        text-decoration: none;
+        margin-right: 3em;
+        opacity: 100%;
+        color: white;
+    }
+    .link-objetivo{
+        font-family: 'Baloo 2', cursive;
+        text-decoration: none;
+        opacity: 100%;
+        color: white;
+
+    }
+    .cont-f1{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between ;
+        align-items: center;
+        background-image: url('../../assets/images/Cabeçalho\ \(HOME\).png');
+
+        width: 100vw;
+        height: 5.5em;
+    }
+    .cont2-f1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: 20em;
+    }
+    .nutrifit-text{
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;800&display=swap');
+        font-family: 'Baloo Tamma 2', cursive;
+        font-size: 40px;
+        font-weight:800;
+        text-shadow: black 0em 0.1em 0.4em;
+        color: white;
+        line-height: 110px;
+        margin-top: 1.4em;     
+        position: absolute;
+    }
+    .img-planta{
+        background-image: url('../../assets/images/ICONE_FOLHA.png');
+        background-size: 75%;
+        background-repeat: no-repeat;
+        height: 93px;
+        width: 100px;
+        margin-left: 14em;
+    }
+    .cont-main-faixa2{
+        display:flex;
+        flex-direction: row;
+        width: auto;
+        height: 41.7em;
+        background: linear-gradient(180deg, rgba(246, 246, 246, 0) 57.81%, rgba(173, 253, 180, 0.29) 97.4%);
+    }
+    .cont-f2{
+        display: flex;
+        flex-direction: row;
+        width: 45em;
+        height: auto;
+    }
+    .img-fundo{
+        width: 500px;
+        height: 28em;
+        background-image: url('../../assets/images/Fundo\ verde\ f2.png');
+        background-size: 100%;
+        margin-top: 3em;
+    }
+    .img-f2{
+        background-image: url('../../assets/images/Img\ f2.png');
+        position: absolute;
+        background-size: 100%;
+        width: 500px;
+        height: 20em;
+        margin-top: 6em;
+        margin-left: 4em;
+    }
+    .cont2-f2{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        width:auto;
+        height: auto;
+    }
+    .text1-f2{
+        color: #7EE087;
+        font-size: 30px;
+        width: 19em;
+    }
+    .text2-f2{
+        width: 30em;
+        text-align: center;
+    }
+    .text3-f2{
+        width: 30em;
+        text-align: center;
+    }
+    .cont-main-faixa3{
+        display: flex;
+        flex-direction: row;
+        height: 41.7em;
+        width: auto;
+        background-image: url('../../assets/images/Fundo\ Verde\ f3.png');
+        background-size: 100%;
+    }
+    .cont-f3{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        width:auto;
+        height: auto;
+    }
+    .cont-f3{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 42em;
+        height: auto;
+    }
+    .text-f3{
+        text-align: center;
+        font-family:'Bellota Text', sans-serif;
+        color:#4E4D4D;
+        font-size: 23px;
+        line-height: 32px;
+        font-weight: 100;
+    }
+    .img-f3{
+        background-image: url('../../assets/images/Img\ f3\ homem.png');
+        background-size: 100%;
+        width: 30em;
+        height: 26em;
+    }
+    .cont2-f3{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 42em;
+        height: auto;
+    }
+} 
