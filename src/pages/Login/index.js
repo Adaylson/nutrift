@@ -1,4 +1,5 @@
 import './index.scss';
+import { Link } from 'react-router-dom';
 
 
 export default function login() {
@@ -10,7 +11,7 @@ export default function login() {
                 <img className="F1-Img" src="/assets/images/Screenshot_1.png" alt=""/>
                 </a>
             </div>
-            <div> <a href="##" className="F1-Home">Home</a> </div>
+            <div> <Link to="/home" className="F1-Home">Home</Link></div>
             <div className="espac"></div>
         </section>
         
