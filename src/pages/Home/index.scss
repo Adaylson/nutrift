@@ -1,6 +1,6 @@
 .page-home{
     margin: 0px;
-
+    overflow-x: hidden;
     @import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300&display=swap');
 
     .cont-main-faixa1{
@@ -51,7 +51,7 @@
     }
     .nutrifit-text{
         @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;800&display=swap');
-        font-family: 'Baloo Tamma 2', cursive;
+        font-family: 'Yatra One', sans-serif;
         font-size: 40px;
         font-weight:800;
         text-shadow: black 0em 0.1em 0.4em;
@@ -66,7 +66,7 @@
         background-repeat: no-repeat;
         height: 93px;
         width: 100px;
-        margin-left: 14em;
+        margin-left: 13em;
     }
     .cont-main-faixa2{
         display:flex;
@@ -141,6 +141,8 @@
         align-items: center;
         width: 42em;
         height: auto;
+        padding-left: 3em;
+        padding-right: 3em;
     }
     .text-f3{
         text-align: center;
@@ -163,5 +165,160 @@
         align-items: center;
         width: 42em;
         height: auto;
+    }
+    .cont-main-faixa4{
+        width: auto;
+        height: 41.7em;
+        background-image: url('../../assets/images/Fundo\ f4.png');
+        background-size: 100%;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    .cont-f4{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: auto;
+        height: 20em;
+    }
+    .cont2-f4{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: auto;
+        height: 20em;
+    }
+    .img-f4{
+        width: 300px;
+        height: 300px;
+        background-image: url('../../assets/images/img1-f4.png');
+        background-position: 100%;
+    }
+    .text-f4{
+        text-align: center;
+        color:#4E4D4D;
+        font-family:'Bellota Text', sans-serif;
+        margin-left: 3em;
+    }
+    .img2-f4{
+        width: 300px;
+        height: 300px;
+        background-image: url('../../assets/images/img2-f4.png');
+        background-position: 100%;
+    }
+    .text2-f4{
+        
+        text-align: center;
+        color:#4E4D4D;
+        font-family:'Bellota Text', sans-serif;    
+    }
+    .img3-f4{
+        width: 300px;
+        height: 300px;
+        background-image: url('../../assets/images/img3-f4.png');
+        background-position: 100%;
+        margin-right: 2em;
+    }
+    .text3-f4{
+        text-align: center;
+        color:#4E4D4D;
+        font-family:'Bellota Text', sans-serif;
+        margin-left: 4em;
+    }
+    .img4-f4{
+        width: 300px;
+        height: 300px;
+        background-image: url('../../assets/images/img4-f4.png');
+        background-position: 100%;
+    }
+    .text4-f4{
+        text-align: center;
+        color:#4E4D4D;
+        font-family:'Bellota Text', sans-serif;
+    }
+    .cont-main-rodape{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: 28em;
+        background-color: #E8E7E7;
+    }
+    .cont-rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 40em;
+        height: auto;
+    }
+    .text-cont1{
+        font-family:'Bellota Text', sans-serif;
+        text-align: center;
+    }
+    .titulo-cont1{
+        font-family:'Andika New Basic', sans-serif;
+        font-size: 30px;
+        color: #7EE087;
+        font-weight: 100;
+    }
+    .cont2-rodape{
+        margin-left: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40em;
+        height: auto;
+    }
+    .titulo-cont2{
+        color: #7EE087;
+        font-family:'Bellota Text', sans-serif;
+        text-align: center;
+        font-weight: 100;
+    }
+    .text2-cont1{
+        font-family:'Bellota Text', sans-serif;
+        text-align: center;
+    }
+    .text3-cont1{
+        font-family:'Bellota Text', sans-serif;
+        text-align: center;
+    }
+    .cont3-rodape{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;      
+        width: 40em;
+        height: auto;
+    }
+    .titulo-cont3{
+        font-family:'Andika New Basic', sans-serif;
+        font-size: 30px;
+        color: #7EE087;
+        font-weight: 100;
+    }
+    .text-cont3{
+        font-family:'Bellota Text', sans-serif;
+        text-align: center;
+    }
+    .text2-cont3{
+        font-family:'Bellota Text', sans-serif;
+        text-align: center;
+    }
+    .cont-c3-rodape{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 3em;
+        width: 20em;
+        border: #7EE087;
+        margin-bottom: 2em;
+    }
+    .img-tw{
+        margin-right:  0.8em;
     }
 } 
