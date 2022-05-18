@@ -56,7 +56,7 @@ export default function login() {
                 </div>
                 
                 <div className="Div-Button">
-                    <button className="botton">ENTRAR</button> 
+                    <Link to='./adm'><button className="botton">ENTRAR</button></Link> 
                 </div>
             </div>
 
