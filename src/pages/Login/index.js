@@ -51,7 +51,7 @@ export default function login() {
                     
                     <div className="Div-Label">
                         <label className="Label-Esqueceu" for="usuario">ESQUECEU A SENHA ?</label>
-                        <div className="espac4"></div>
+                        <div className="espac6"></div>
                     </div>
                 </div>
                 

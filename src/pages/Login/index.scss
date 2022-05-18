@@ -44,7 +44,11 @@
         width: 35em;
         height: 15px;
     }
-        
+       
+    .espac6{
+        height: 10px;
+    }
+    
     
     .FAIXA-FANTASMA{
     width: auto;
@@ -58,8 +62,8 @@
     }
     
     .F2-Card{
-    width: 735px;
-    height: 726px;
+    width: 635px;
+    height: 645px;
     border-radius: 57px;
     background-color: #5D5F5D;
     box-shadow: 2px 4px 20px 8px;
@@ -71,7 +75,7 @@
     }
     
     .img{
-        position: absolute;
+        position: fixed;
        
         
     }
@@ -79,14 +83,14 @@
     .Loginzin{
         font-family: "SemiBold";
         color: white;
-        font-size: 64px;
-        line-height: 91px;
-        text-shadow: 0px 4px 4px;
+        font-size: 54px;
+        line-height: 81px;
+        text-shadow: 0px 3px 3px;
         
     }
     
     .Div-Login{
-        height: 91px;
+        height: 81px;
         display: flex;  
     }
     
@@ -97,19 +101,19 @@
     }
     
     label{
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 28px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
     color: white;
     font-family: "Bold";
     }
     
     input{
-        width: 620px;
-        height: 60px;
-        border-radius: 57px;
+        width: 600px;
+        height: 50px;
+        border-radius: 47px;
         background-color: #E9E9E9;
-        font-size: 2em;
+        font-size: 1.5em;
     }
     
     .Div-Button{
@@ -119,15 +123,20 @@
     
     
     .botton{
-        width: 271px;
-        height: 71px;
+        width: 171px;
+        height: 61px;
         background-color:#97FDA0;
         color: #5D5F5D;
-        border-radius: 56px;
-        font-size: 24px;
+        border-radius: 46px;
+        font-size: 20px;
         font-family: "Bold";
     }
     
     .Label-Esqueceu{
         text-decoration-line: underline;
+    }
+    
+    .Div-Label{
+        width: 33em;
+         
     }
