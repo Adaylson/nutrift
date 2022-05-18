@@ -321,4 +321,52 @@
     .img-tw{
         margin-right:  0.8em;
     }
+    
+    @media screen and (max-width: 414px) {
+
+        .img-f2{
+            width: fit-content;
+        }
+
+        .img-fundo{
+            width: 100%;
+        }
+
+        .cont2-f2{
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text1-f2{
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .cont-main-faixa3{
+            flex-direction: column-reverse;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .text-f3{
+            margin-bottom: 3em;
+        }
+
+        .cont2-f3{
+            background: fixed;
+            background-repeat: no-repeat;
+        }
+    
+        .img-f3{
+            width: 50%;
+            background-repeat: no-repeat;
+            background-position: 50px;
+        }
+
+
+    }
 } 
