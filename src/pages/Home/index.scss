@@ -7,7 +7,7 @@
         display: flex;
         flex-direction: column;
         width: 100vw;
-        height: 41.7em;
+        height: 44em;
         background-image: url('../../assets/images/Fundo\ F1\ \(HOME\).png');
         background-attachment: fixed;
     }
@@ -66,6 +66,7 @@
         justify-content: center;
         width: auto;
         height: 20em;
+        border: 0.1px solid red;
     }
     .nutrifit-text{
         @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;800&display=swap');
@@ -77,6 +78,11 @@
         line-height: 110px;
         margin-top: 1.4em;     
         position: absolute;
+        cursor:pointer;
+    }
+    .nutrifit-text:hover{
+        font-size: 43px;
+        font: weight 900px;
     }
     .img-planta{
         background-image: url('../../assets/images/ICONE_FOLHA.png');
@@ -85,6 +91,12 @@
         height: 93px;
         width: 100px;
         margin-left: 13em;
+        margin-top: 1em;
+        cursor: pointer;
+    }
+    .img-planta:hover{
+        height: 98px;
+        width: 109px;
     }
     .cont-main-faixa2{
         display:flex;
@@ -260,7 +272,7 @@
         display: flex;
         flex-direction: row;
         width: auto;
-        height: 28em;
+        height: 22em;
         background-color: #E8E7E7;
     }
     .cont-rodape{
@@ -274,12 +286,14 @@
     .text-cont1{
         font-family:'Bellota Text', sans-serif;
         text-align: center;
+        color: #4E4D4D;
     }
     .titulo-cont1{
         font-family:'Andika New Basic', sans-serif;
         font-size: 30px;
         color: #7EE087;
         font-weight: 100;
+        margin-bottom: 0.3em;
     }
     .cont2-rodape{
         margin-left: 2em;
@@ -295,14 +309,18 @@
         font-family:'Bellota Text', sans-serif;
         text-align: center;
         font-weight: 100;
+        margin-bottom: 0.3em;
     }
     .text2-cont1{
         font-family:'Bellota Text', sans-serif;
         text-align: center;
+        color: #4E4D4D;
     }
     .text3-cont1{
         font-family:'Bellota Text', sans-serif;
         text-align: center;
+        margin-bottom: 0.9em;
+        color: #4E4D4D;
     }
     .cont3-rodape{
         display: flex;
@@ -317,14 +335,18 @@
         font-size: 30px;
         color: #7EE087;
         font-weight: 100;
+        margin-bottom: 0.3em;
     }
     .text-cont3{
         font-family:'Bellota Text', sans-serif;
         text-align: center;
+        color: #4E4D4D;
+        margin-bottom: 0.2em;
     }
     .text2-cont3{
         font-family:'Bellota Text', sans-serif;
         text-align: center;
+        color: #4E4D4D;
     }
     .cont-c3-rodape{
         display: flex;
@@ -470,7 +492,175 @@
         .page-home{
             background-repeat: no-repeat;
         }
-
-
+    }
+    @media screen and (max-width:1920px) and(min-width:1500px) {
+        .cont-main-faixa1{
+            height: 67.5em;
+        }
+        .nutrifit-text{
+            font-size: 50px;
+        }
+        .cont2-f1{
+            height: 30em;
+        }
+        .img-planta{
+            margin-top: 1em;
+            margin-left: 15em;
+        }
+        .link-contato{
+            font-size: 20px;
+        }
+        .link-login{
+            font-size: 20px;
+        }
+        .link-objetivo{
+            font-size: 20px;
+        }
+        .cont-f1{
+            height: 8em;
+        }
+        .cont-main-faixa2{
+            height: 67.5em;
+        }
+        .cont-main-faixa3{
+            height: 67.5em;
+        }
+        .cont-main-faixa4{
+            height: 67.5em;
+        }
+        .cont-main-rodape{
+            height: 23em;
+        }
+        .cont-f2{
+            border: 0.1px solid red;
+            width: 54em;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+        .img-fundo{
+            width: 920px;
+            height: 39em;
+            background-size: 100%;
+            margin-top: 3em;
+        }
+        .img-f2{
+            background-image: url('../../assets/images/Img\ f2.png');
+            position: absolute;
+            background-size: 100%;
+            width: 620px;
+            height: 35em;
+            margin-top: 10em;
+        }
+        .cont2-f2{
+            margin-left: 4em;
+        }
+        .text1-f2{
+            color: #7EE087;
+            font-family:'Bellota Text', sans-serif;
+            font-size: 36px;
+            width: 19em;
+            margin-bottom: 0.9em;
+        }
+        .text2-f2{
+            width: max-content;
+            font-family:'Bellota Text', sans-serif;    
+            font-size: 20px;
+            text-align: center;
+            line-height: 1.2em;
+        }
+        .text3-f2{
+            width: max-content;
+            font-family:'Bellota Text', sans-serif;    
+            font-size: 20px;
+            line-height: 1.2em;
+        }
+        .cont-f3{
+            border: 0.1px solid red;
+            width: 60em;
+        }
+        .text-f3{
+            font-size: 26px;
+            line-height: 1.4em;
+        }
+        .cont2-f3{
+            justify-content: center;
+            width: 50em;
+        }
+        .img-f3{
+            width: 38em;
+            height: 33em;
+        }
+        .cont-f4{
+            height: 32em;
+            padding: 0em 1.3em;
+        }
+        .img-f4{
+            width: 360px;
+            height: 360px;
+            background-size: 100%;
+        }
+        .text-f4{
+            font-size: 22px;
+        }
+        .img2-f4{
+            width: 360px;
+            height: 360px;
+            background-size: 100%;
+        }
+        .text2-f4{
+            font-size: 22px;
+        }
+        .cont2-f4{
+            height: 32em;
+        }
+        .img3-f4{
+            width: 360px;
+            height: 360px;
+            background-size: 100%;
+        }
+        .text3-f4{
+            font-size: 22px;
+        }
+        .img4-f4{
+            width: 360px;
+            height: 360px;
+            background-size: 100%;
+        }
+        .text4-f4{
+            font-size: 22px;
+        }
+        .titulo-cont1{
+            font-size: 37px;
+            margin-bottom: 0.3em;
+        }
+        .titulo-cont2{
+            font-size: 37px;
+            margin-bottom: 0.5em;
+        }
+        .titulo-cont3{
+            font-size: 37px;
+            margin-bottom: 0.2em;
+        }
+        .text-cont1{
+            font-size: 18px;
+            color: #4E4D4D;
+        }
+        .text2-cont1{
+            font-size: 20px;
+            color: #4E4D4D;
+        }
+        .text3-cont1{
+            font-size: 20px;
+            margin-bottom: 0.7em;
+            color: #4E4D4D;
+        }
+        .text-cont3{
+            font-size: 18px;
+            color: #4E4D4D;
+        }
+        .text2-cont3{
+            font-size: 18px;
+            color: #4E4D4D;
+        }
     }
 } 

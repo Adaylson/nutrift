@@ -50,9 +50,7 @@ export default function home() {
                         </p>
                     </div>
                     <div className='cont2-f3'>
-                        <div className='img-f3'>
-                            
-                        </div>
+                        <div className='img-f3'></div>
                     </div>
                 </div>
                 <div id='bottom' className='cont-main-faixa4'>
