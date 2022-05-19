@@ -8,14 +8,14 @@ export default function adm() {
         <main className='page-adm'>
             <header>
                 <p>Bem vindo user7754</p>
-                <Link to='../home'>HOME</Link>
-                <img src="/assets/images/magnifying-glass-svgrepo-com 1.svg" alt="buscar"/>
+                <Link to='../home' className='home'>HOME</Link>
+                <img src="/assets/images/magnifying-glass-svgrepo-com 1.svg" alt="buscar" className='lupa'/>
             </header>
 
             <main>
 
                 <div className="menu">
-                    <Link to='../cadastro'>Adicionar Consulta</Link>
+                    <Link to='../cadastro' className='cadastro'>Adicionar Consulta</Link>
                 </div>
 
                 <div className="areacard">
