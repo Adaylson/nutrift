@@ -10,9 +10,11 @@ export default function login() {
                 <a href="###">
                 <img className="F1-Img" src="/assets/images/Screenshot_1.png" alt=""/>
                 </a>
+            
             </div>
+                <div className="espac"></div>
             <div> <Link to="/home" className="F1-Home">Home</Link></div>
-            <div className="espac"></div>
+            
         </section>
         
         <section className="FAIXA-FANTASMA"></section>
@@ -22,7 +24,7 @@ export default function login() {
             <div className="F2-Card"> 
 
                     <div className="div-img">
-                        <img className="img" src="/assets/images/Group.png" alt=""/>
+                        <img className="img" src="/assets/images/Group@2x.svg" alt=""/>
                     </div>
 
                 <div className="espac1"></div>

@@ -9,7 +9,7 @@
     height: 5em;
     background-color: #F6F6F6;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     }
     
@@ -23,7 +23,7 @@
     }
     
     .espac{
-    width: 10em;
+    width: 55em;
     }
     .espac1{
         width: 1px;
@@ -62,9 +62,9 @@
     }
     
     .F2-Card{
-    width: 635px;
-    height: 645px;
-    border-radius: 57px;
+    width: 535px;
+    height: 570px;
+    border-radius: 10px;
     background-color: #5D5F5D;
     box-shadow: 2px 4px 20px 8px;
     }
@@ -76,6 +76,8 @@
     
     .img{
         position: fixed;
+        width: 240px;
+        height: 270px;
        
         
     }
@@ -83,14 +85,14 @@
     .Loginzin{
         font-family: "SemiBold";
         color: white;
-        font-size: 54px;
-        line-height: 81px;
-        text-shadow: 0px 3px 3px;
+        font-size: 44px;
+        line-height: 71px;
+        text-shadow: 0px 2px 2px;
         
     }
     
     .Div-Login{
-        height: 81px;
+        height: 71px;
         display: flex;  
     }
     
@@ -101,19 +103,19 @@
     }
     
     label{
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
     color: white;
     font-family: "Bold";
     }
     
     input{
-        width: 600px;
-        height: 50px;
-        border-radius: 47px;
+        width: 500px;
+        height: 40px;
+        border-radius: 40px;
         background-color: #E9E9E9;
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
     
     .Div-Button{
@@ -123,12 +125,12 @@
     
     
     .botton{
-        width: 171px;
-        height: 61px;
+        width: 151px;
+        height: 41px;
         background-color:#97FDA0;
         color: #5D5F5D;
-        border-radius: 46px;
-        font-size: 20px;
+        border-radius: 36px;
+        font-size: 17px;
         font-family: "Bold";
     }
     
@@ -137,6 +139,8 @@
     }
     
     .Div-Label{
-        width: 33em;
+        width: 28em;
          
     }
+
+    
