@@ -332,7 +332,12 @@
     @media screen and (max-width: 414px) {
 
         .img-f2{
-            width: fit-content;
+            margin: 0px;
+            width: 300px;
+            height: 300px;
+        }
+        .text1-f2{
+            margin-top: 10em;
         }
 
         .img-fundo{
@@ -364,7 +369,6 @@
         }
 
         .cont2-f3{
-            background: fixed;
             background-repeat: no-repeat;
         }
     
@@ -372,6 +376,88 @@
             width: 50%;
             background-repeat: no-repeat;
             background-position: 50px;
+        }
+
+        .cont-main-faixa4{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .img2-f4{
+            width: 218px;
+            height: 206px;
+            margin-left: 1em;
+        }
+
+        .cont-f4, .cont2-f4{
+            flex-direction: row-reverse;
+        }
+
+        .text3-f4{
+            margin-left: 1em;
+        }
+
+        .img3-f4{
+            width: 227px;
+            height: 192px;
+        }
+        .img4-f4{
+            display: none;
+        }
+        .text4-f4{
+            display: none;
+        }
+        .text-f4{
+            display: none;
+        }
+        .img-f4{
+            display: none;
+        }
+        .img4-f4{
+            flex-direction: column;
+        }
+
+        .cont-main-rodape{
+            flex-direction: column;
+            width: 100%;
+            height: fit-content;
+            align-items: center;
+        }
+
+        .cont-rodape{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .cont-c3-rodape{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .cont2-rodape{
+            margin: 0px;
+        }
+
+        .titulo-cont2{
+            display: none;
+        }
+
+        .text3-cont1{
+            display: none;
+        }
+
+        .text2-cont1{
+            display: none;
+        }
+        
+        .cont-rodape{
+            margin-bottom: 1.5em;
+        }
+
+        .page-home{
+            background-repeat: no-repeat;
         }
 
 
