@@ -15,7 +15,7 @@ export default function adm() {
             <main>
 
                 <div className="menu">
-                    <p>Adicionar Consulta</p>
+                    <Link to='../cadastro'>Adicionar Consulta</Link>
                 </div>
 
                 <div className="areacard">

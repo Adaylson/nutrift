@@ -31,13 +31,24 @@
         opacity: 100%;
         color: white;
     }
+    .link-contato:hover{
+        color: #c7f7cb;
+        transition: 0.5;   
+    }
+
+
     .link-objetivo{
         font-family: 'Baloo 2', cursive;
         text-decoration: none;
         opacity: 100%;
         color: white;
-
     }
+    .link-objetivo:hover{
+        color: #c7f7cb;
+        transition: 0.5;   
+    }
+
+
     .cont-f1{
         display: flex;
         flex-direction: row;
