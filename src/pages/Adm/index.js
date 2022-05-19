@@ -8,7 +8,7 @@ export default function adm() {
         <main className='page-adm'>
             <header>
                 <p>Bem vindo user7754</p>
-                <Link to='./home'>HOME</Link>
+                <Link to='../home'>HOME</Link>
                 <img src="/assets/images/magnifying-glass-svgrepo-com 1.svg" alt="buscar"/>
             </header>
 

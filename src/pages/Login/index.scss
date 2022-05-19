@@ -94,6 +94,7 @@
     .Div-Login{
         height: 71px;
         display: flex;  
+        
     }
     
     .Div-Imputs{
@@ -123,11 +124,19 @@
         justify-content: center;
     }
     
-    
+    .botton:hover{
+        transition: 0.2s;
+        width: 161px;
+        height: 45px;
+        background:#97FDA0;
+        cursor: pointer;;
+    }
+
+
     .botton{
         width: 151px;
         height: 41px;
-        background-color:#97FDA0;
+        background-color:#E9E9E9;
         color: #5D5F5D;
         border-radius: 36px;
         font-size: 17px;
@@ -142,5 +151,3 @@
         width: 28em;
          
     }
-
-    
