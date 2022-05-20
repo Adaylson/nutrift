@@ -66,7 +66,6 @@
         justify-content: center;
         width: auto;
         height: 20em;
-        border: 0.1px solid red;
     }
     .nutrifit-text{
         @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;800&display=swap');
@@ -531,8 +530,7 @@
         .cont-main-rodape{
             height: 23em;
         }
-        .cont-f2{
-            border: 0.1px solid red;
+        .cont-f2{       
             width: 54em;
             justify-content: flex-end;
             align-items: flex-start;
@@ -567,15 +565,16 @@
             font-size: 20px;
             text-align: center;
             line-height: 1.2em;
+            color: #4E4D4D;
         }
         .text3-f2{
             width: max-content;
             font-family:'Bellota Text', sans-serif;    
             font-size: 20px;
             line-height: 1.2em;
+            color:#4E4D4D;
         }
         .cont-f3{
-            border: 0.1px solid red;
             width: 60em;
         }
         .text-f3{
