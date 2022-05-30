@@ -1,2 +1,346 @@
 
+.page-container {
+    input {
+        border: none;
+        border-radius: 5px;
+        background-color: #ffffff;  
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 62em;
+
+    .cabecalho-page {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .div-alinhar-logo {
+
+    }
+
+    .nutrifit-text-header {
+
+    }
+
+    .img-planta {
+
+    }
+
+    .img-planta-escurecer {
+
+    }
+
+    .container1-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        border-radius: 41px;
+
+        background-color: #E1E1E1;
+
+        width: 113em;
+        height: 59em;
+    }
+
+    .img-card1 {
+       background-image: url('../../assets/images/imgcardform.png');
+       background-repeat: no-repeat;
+
+       width: 42em;
+       height: 59em;
+    }
+
+    .img-card1-esc {
+
+    }
+
+    .card2 {
+        display: flex;
+        flex-direction: column;
+        
+        width: 70em;
+    }
+
+    .cabecalho-card2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        text-align: left;
+    }
+
+    .alihar-cabecalho-card2 {
+
+    }
+
+    .div-text-emissao-card2 {
+        
+    }
+
+    .dataEmissao-card2 {
+
+    }
+
+    .titulo-cabecalho-card2 {
+
+    }
+
+    .div-inputs-infoPaciente {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .container1-inputs-infoPaciente {
+
+    }
+
+    .alinhar-textEinput-nome {
+
+    }
+
+    .text-input-nome {
+
+    }
+
+    .alinhar-input-nome {
+
+    }
+
+    .input-nome-infoPaciente {
+
+    }
+
+    .alinhar-textEinput-email {
+
+    }
+
+    .text-input-email {
+
+    }
+
+    .alinhar-input-email {
+
+    }
+
+    .input-email-infoPaciente {
+
+    }
+
+    .alinhar-textEinput-cpf {
+
+    }
+
+    .text-input-cpf {
+
+    }
+
+    .alinhar-input-cpf {
+
+    }
+
+    .input-cpf-infoPaciente {
+
+    }
+
+    .alinhar-textEinput-peso {
+
+    }
+
+    .text-input-peso {
+
+    }
+
+    .alinhar-input-peso {
+
+    }
+
+    .input-peso-infoPaciente {
+
+    }
+
+    .container2-inputs-infoPaciente {
+
+    }
+
+    .alinhar-textEinput-altura {
+
+    }
+
+    .text-input-altura {
+
+    }
+
+    .alinhar-input-altura {
+
+    }
+
+    .input-altura-infoPaciente {
+
+    }
+
+    .alinhar-textEinput-tipoFisico {
+
+    }
+
+    .text-input-tipoFisico {
+
+    }
+
+    .alinhar-input-tipoFisico {
+
+    }
+
+    .input-tipoFisico-infoPaciente {
+
+    }
+
+    .alinhar-textEinput-telefone {
+
+    }
+
+    .text-input-telefone {
+
+    }
+
+    .alinhar-input-telefone {
+
+    }
+
+    .input-telefone-infoPaciente {
+
+    }
+
+    .alinhar-textEinputs-genero {
+
+    }
+
+    .text-input-genero {
+
+    }
+
+    .div-inputEtext-masc {
+
+    }
+
+    .alinhar-input-masc {
+
+    }
+
+    .input-masc-infoPaciente {
+
+    }
+
+    .text-input-masc {
+
+    }
+
+    .div-inputEtext-fem {
+
+    }
+
+    .alinhar-input-fem {
+
+    }
+
+    .input-fem-infoPaciente {
+
+    }
+
+    .text-input-fem {
+
+    }
+
+    .container-planodeNutricao {
+        display: flex;
+        flex-direction: column;
+
+       height: 30em;
+    }
+
+    .cabecalho2-card2 {
+
+    }
+
+    .alinhar-titulo-cabecalho2 {
+
+    }
+
+    .titulo-cabecalho2 {
+
+    }
+
+    .div-inputs-planodeNutricao {
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-around;
+
+    }
+
+    .container1-inputs-planodeNutricao {
+
+    }
+
+    .alinhar-textEinput-objetivo {
+
+    }
+
+    .text-input-objetivo {
+
+    }
+
+    .alinhar-input-objetivo {
+
+    }
+
+    .input-objetivo-planodeNutricao {
+
+    }
+
+    .alinhar-textEinput-estrategia {
+
+    }
+
+    .text-input-estrategia {
+
+    }
+
+    .alinhar-input-estrategia {
+
+    }
+
+    .input-estrategia-planodeNutricao {
+
+    }
+
+    .container2-inputs-planodeNutricao {
+
+    }
+
+    .text-input-habitosAlimentares {
+
+    }
+
+    .alinhar-input-habitosAlimentares {
+
+    }
+
+    .input-habitosAlimentares-planodeNutricao {
+
+    }
+
+    .alinhar-button-salvar {
+        
+    }
+
+    .button-salvar {
+
+    }
+}
     
