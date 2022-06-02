@@ -6,12 +6,7 @@ export default function login() {
     return(
         <div className="Main">
         <section className="Faixa-1">
-            <div>
-                <a href="###">
-                <img className="F1-Img" src="/assets/images/Screenshot_1.png" alt=""/>
-                </a>
-            
-            </div>
+
                 <div className="espac"></div>
             <div> <Link to="/home" className="F1-Home">Home</Link></div>
             
