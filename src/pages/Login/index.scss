@@ -1,157 +1,94 @@
-    
-    .Main{
-        width:100vw ;
-        height: 100vh ;
-        background-color: #97FDA0;
-    }
-    .Faixa-1{
-    width: auto ;
-    height: 5em;
-    background-color: #F6F6F6;
+body{
+    background-image: url('../../assets/images/image6.png');
+    background-size: 100%;
+}
+.Main{
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+}
+
+.branco{
+    display: flex;
     align-items: center;
-    }
-    
-    .F1-Img{
-        width: 169px;
-        height: 63px;
-    }
-    .F1-Home{
-    font-size: 25px;
-    font-family: "Regular";
-    }
-    .F1-Home:hover{
-        color: #686868;
-        transition: 0.5;   
-    }
-    
-    .espac{
-    width: 55em;
-    }
-    .espac1{
-        width: 1px;
-        height: 9em;
-    }
-    .espac2{
-        width: 1px;
-        height: 5em;
-    }
-    .espac3{
-        width: 1px;
-        height: 2em;
-    }
-    .espac4{
-        width: 40em;  
-    }
-    .espac5{
-        width: 35em;
-        height: 15px;
-    }
-       
-    .espac6{
-        height: 10px;
-    }
-    
-    
-    .FAIXA-FANTASMA{
-    width: auto;
-    height: 3em;
-    background-color: #97FDA0;
-    }
-    
-    .Faixa-2{
-    display: flex;
+    flex-direction: column;
     justify-content: center;
-    }
-    
-    .F2-Card{
-    width: 535px;
-    height: 570px;
-    border-radius: 10px;
-    background-color: #5D5F5D;
-    box-shadow: 2px 4px 20px 8px;
-    }
-    
-    .div-img{
-        display: flex;
-        justify-content: center;
-    }
-    
-    .img{
-        position: fixed;
-        width: 240px;
-        height: 270px;
-       
-        
-    }
-    
-    .Loginzin{
-        font-family: "SemiBold";
-        color: white;
-        font-size: 44px;
-        line-height: 71px;
-        text-shadow: 0px 2px 2px;
-        
-    }
-    
-    .Div-Login{
-        height: 71px;
-        display: flex; 
-    }
-    
+    background-color: white;
+    height: 100vh;
+    width: 80vh;
+    border-radius: 14px;
 
+}
 
-    .Div-Imputs{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.logintext{
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: "Bold";
+    font-size: 40px;
+    line-height: 71px;
+    text-shadow: 0px 2px 2px;
+        
+
+}
+
+.user{
     
-    label{
+}
+
+.Label-Esqueceu{
+    font-size: 12px;
+}
+
+.Div-Label{
+    margin-top: 24px;
+}
+
+.botton{
+    margin-top: 15px;
+}
+
+label{
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
+    font-family: "Bold";
+}
+
+.botton:hover{
+    transition: 0.2s;
+    width: 161px;
+    height: 45px;
+    background:#97FDA0;
+    cursor: pointer;;
+}
+
+
+.botton{
+    width: 151px;
+    height: 41px;
+    background-color:#ADFDB4;
+    color: #5D5F5D;
+    border-radius: 36px;
+    font-size: 17px;
+    font-family: "Bold";
+    border: none;
+}
+
+input{
+    width: 35vh;
+    border-radius: 40px;
+    background-color: #E9E9E9;
+    font-size: 1.2em;
+    border: none;
+}
+
+.textsep{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     color: white;
     font-family: "Bold";
-    }
-    
-    input{
-        width: 500px;
-        height: 40px;
-        border-radius: 40px;
-        background-color: #E9E9E9;
-        font-size: 1.2em;
-    }
-    
-    .Div-Button{
-        display: flex;
-        justify-content: center;
-    }
-    
-    .botton:hover{
-        transition: 0.2s;
-        width: 161px;
-        height: 45px;
-        background:#97FDA0;
-        cursor: pointer;;
-    }
+    font-size: 35px;
+    text-align: center;
+}
 
-
-    .botton{
-        width: 151px;
-        height: 41px;
-        background-color:#E9E9E9;
-        color: #5D5F5D;
-        border-radius: 36px;
-        font-size: 17px;
-        font-family: "Bold";
-    }
-    
-    .Label-Esqueceu{
-        text-decoration-line: underline;
-    }
-    
-    .Div-Label{
-        width: 28em;
-    }

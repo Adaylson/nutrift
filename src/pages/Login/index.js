@@ -4,62 +4,40 @@ import { Link } from 'react-router-dom';
 
 export default function login() {
     return(
-        <div className="Main">
-        <section className="Faixa-1">
-
-                <div className="espac"></div>
-            <div> <Link to="/home" className="F1-Home">Home</Link></div>
-            
-        </section>
+    <main className="Main">
         
-        <section className="FAIXA-FANTASMA"></section>
+    <div className='branco'> 
+        <h1 className="logintext"> LOGIN </h1>
 
-        <section className="Faixa-2">
-
-            <div className="F2-Card"> 
-
-                    <div className="div-img">
-                        <img className="img" src="/assets/images/Group@2x.svg" alt=""/>
-                    </div>
-
-                <div className="espac1"></div>
-                <div className="espac3"></div>
-                <div className="Div-Login">
-                    <h1 className="Loginzin"> LOGIN </h1>
-                </div>
-                <div className="espac2"></div>
-                
-                <div className="Div-Imputs">
+        <div className="Div-Imputs">
                     
-                    <div className="Div-Label">
-                        <label for="usuario"> USUÁRIO : </label>
+            <div className="Div-Label">
+           <label for="usuario" className='user'> USUÁRIO : </label>
                         <div className="espac4"></div>
                     </div>
                     
                     <input type="text" className="input-usuario" name="usuario"/>
-                    <div className="espac3"></div>
                    
                     <div className="Div-Label">
-                        <label for="usuario"> SENHA : </label>
-                        <div className="espac4"></div>
+                        <label for="usuario" className='senha'> SENHA : </label>
+                        
                     </div>
                     
                     <input type="password" className="input-usuario" name="usuario"/>
                     
-                    <div className="Div-Label">
+                    <div className="Div-Label2">
                         <label className="Label-Esqueceu" for="usuario">ESQUECEU A SENHA ?</label>
-                        <div className="espac6"></div>
+        
                     </div>
                 </div>
-                
                 <div className="Div-Button">
                     <Link to='../adm'><button className="botton">ENTRAR</button></Link> 
                 </div>
+
+                
             </div>
+        <div className='textsep'>Seja bem-vindo, novamente...</div>
 
-
-
-        </section>
-</div>
+    </main>
     )
 }
