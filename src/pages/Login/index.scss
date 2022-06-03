@@ -1,10 +1,9 @@
-body{
-    background-image: url('../../assets/images/image6.png');
-    background-size: 100%;
-}
+
 .Main{
     display: flex;
     flex-direction: row;
+    background-image: url('../../assets/images/image6.png');
+    background-size: 100%;
 }
 
 .branco{
@@ -75,6 +74,7 @@ label{
 
 input{
     width: 35vh;
+    height: 3.8vh;
     border-radius: 40px;
     background-color: #E9E9E9;
     font-size: 1.2em;
