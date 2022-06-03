@@ -1,3 +1,11 @@
+@font-face {
+    font-family: um;
+    src: url(../../assets/fonts/SourceSans3-Regular.ttf);
+}
+@font-face {
+    font-family: dois;
+    src: url(../../assets/fonts/SourceSans3-Bold.ttf);
+}
 
 .page-container {
     input {
@@ -11,12 +19,23 @@
     align-items: center;
     justify-content: space-between;
 
+    font-family: 'um';
+    color:#000000;
+    font-weight: bold;
+    
     height: 62em;
 
     .cabecalho-page {
+
         display: flex;
         flex-direction: row;
         justify-content: center;
+
+        background: linear-gradient(180deg, #D9FBCD 0%, #7EE087 0.01%, rgba(217, 217, 217, 0) 70.31%);
+
+        width: 100vw;
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
 
     .div-alinhar-logo {
@@ -52,7 +71,7 @@
        background-image: url('../../assets/images/imgcardform.png');
        background-repeat: no-repeat;
 
-       width: 42em;
+       width: 43em;
        height: 59em;
     }
 
@@ -63,6 +82,7 @@
     .card2 {
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
         
         width: 70em;
     }
@@ -70,8 +90,10 @@
     .cabecalho-card2 {
         display: flex;
         flex-direction: row;
-        justify-content: start;
-        text-align: left;
+        justify-content: center;
+        text-align: center;
+
+        width: 65em;
     }
 
     .alihar-cabecalho-card2 {
@@ -79,11 +101,17 @@
     }
 
     .div-text-emissao-card2 {
-        
+        padding-top: 1.5em;
     }
 
     .dataEmissao-card2 {
 
+    }
+
+    .div-titulo-cabecalho-card2{
+        width: 15em;
+
+        padding-bottom: 2em;
     }
 
     .titulo-cabecalho-card2 {
@@ -93,15 +121,26 @@
     .div-inputs-infoPaciente {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
+
+        width: 65em;
     }
 
     .container1-inputs-infoPaciente {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
+        height: 17em;
     }
 
     .alinhar-textEinput-nome {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
+        width: 23em;
     }
 
     .text-input-nome {
@@ -109,15 +148,20 @@
     }
 
     .alinhar-input-nome {
-
+      
     }
 
     .input-nome-infoPaciente {
-
+        width: 15em;
     }
 
     .alinhar-textEinput-email {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
+        width: 23em;
     }
 
     .text-input-email {
@@ -129,11 +173,16 @@
     }
 
     .input-email-infoPaciente {
-
+        width: 15em;
     }
 
     .alinhar-textEinput-cpf {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
+        width: 23em;
     }
 
     .text-input-cpf {
@@ -145,11 +194,16 @@
     }
 
     .input-cpf-infoPaciente {
-
+        width: 15em;
     }
 
     .alinhar-textEinput-peso {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
+        width: 23em;
     }
 
     .text-input-peso {
@@ -161,15 +215,24 @@
     }
 
     .input-peso-infoPaciente {
-
+        width: 15em;
     }
 
     .container2-inputs-infoPaciente {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
+        height: 17.5em;
     }
 
     .alinhar-textEinput-altura {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
+        width: 23em;
     }
 
     .text-input-altura {
@@ -181,11 +244,16 @@
     }
 
     .input-altura-infoPaciente {
-
+        width: 15em;
     }
 
     .alinhar-textEinput-tipoFisico {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
+        width: 23em;
     }
 
     .text-input-tipoFisico {
@@ -197,11 +265,16 @@
     }
 
     .input-tipoFisico-infoPaciente {
-
+        width: 15em;
     }
 
     .alinhar-textEinput-telefone {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
+        width: 23em;
     }
 
     .text-input-telefone {
@@ -213,11 +286,16 @@
     }
 
     .input-telefone-infoPaciente {
-
+        width: 15em;
     }
 
     .alinhar-textEinputs-genero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
+        width: 23em;
     }
 
     .text-input-genero {
@@ -225,7 +303,12 @@
     }
 
     .div-inputEtext-masc {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
 
+        width: 4em
     }
 
     .alinhar-input-masc {
@@ -233,7 +316,8 @@
     }
 
     .input-masc-infoPaciente {
-
+        width: 1em;
+      
     }
 
     .text-input-masc {
@@ -241,15 +325,20 @@
     }
 
     .div-inputEtext-fem {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
 
+        width: 4em
     }
 
     .alinhar-input-fem {
-
+       
     }
 
     .input-fem-infoPaciente {
-
+        width: 1em;
     }
 
     .text-input-fem {
@@ -259,16 +348,21 @@
     .container-planodeNutricao {
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
 
-       height: 30em;
+       height: 37em;
     }
 
     .cabecalho2-card2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
 
+        width: 64.5em;
     }
 
     .alinhar-titulo-cabecalho2 {
-
+       
     }
 
     .titulo-cabecalho2 {
@@ -279,16 +373,31 @@
         display: flex;
         flex-direction: row;
 
-        justify-content: space-around;
+        justify-content: space-between;
+
+        width: 70em;
+        height: 20em;
 
     }
 
     .container1-inputs-planodeNutricao {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        height: 15em;
+
+
 
     }
 
     .alinhar-textEinput-objetivo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
+        width: 23em;
     }
 
     .text-input-objetivo {
@@ -300,11 +409,16 @@
     }
 
     .input-objetivo-planodeNutricao {
-
+        width: 15em;
     }
 
     .alinhar-textEinput-estrategia {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
+        width: 23em;
     }
 
     .text-input-estrategia {
@@ -316,11 +430,18 @@
     }
 
     .input-estrategia-planodeNutricao {
-
+        width: 15em;
+        height: 7em;
     }
 
     .container2-inputs-planodeNutricao {
-
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+        width: 30em;
+        height: 15em; 
+    
     }
 
     .text-input-habitosAlimentares {
@@ -332,15 +453,37 @@
     }
 
     .input-habitosAlimentares-planodeNutricao {
-
+        width: 20em;
+        height: 10em;
     }
 
     .alinhar-button-salvar {
-        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        width: 65em;
     }
 
     .button-salvar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
+        border-radius: 3.5em;
+        
+        background:#7EE087;
+
+        width: 10em;
+        height: 3em;
+
+        cursor: pointer;
+    }
+
+    .button-salvar:hover {
+        width: 11em;
+        
+
+        transition: width, 0.5s;
     }
 }
-    

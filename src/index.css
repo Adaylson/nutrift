@@ -1,0 +1,23 @@
+
+a, a:link , a:visited , a:active{
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+  }
+
+*{
+box-sizing: border-box;
+margin:  0px;
+
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url(./assets/fonts/SourceSans3-Regular.ttf);
+
+  font-family: "SemiBold";
+  src: url(./assets/fonts/SourceSans3-SemiBold.ttf);
+
+  font-family: "Bold";
+  src: url(./assets/fonts/SourceSans3-Bold.ttf);
+}
