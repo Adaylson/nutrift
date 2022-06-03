@@ -7,6 +7,8 @@ export default function login() {
     <main className="Main">
         
     <div className='branco'> 
+
+
         <h1 className="logintext"> LOGIN </h1>
 
         <div className="Div-Imputs">
@@ -25,10 +27,6 @@ export default function login() {
                     
                     <input type="password" className="input-usuario" name="usuario"/>
                     
-                    <div className="Div-Label2">
-                        <label className="Label-Esqueceu" for="usuario">ESQUECEU A SENHA ?</label>
-        
-                    </div>
                 </div>
                 <div className="Div-Button">
                     <Link to='../adm'><button className="botton">ENTRAR</button></Link> 
