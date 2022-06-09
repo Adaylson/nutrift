@@ -1,0 +1,142 @@
+
+/POST   /usuario/login   body
+
+request 
+{
+    "email": "",
+    "senha": ""
+}
+
+response
+{
+    "id": 0,
+    "email": "",
+    "nome":""
+}
+
+(2) /POST   /consulta    body
+
+request
+{
+
+    "nome": "Adaylson Arcanjo Evaristo",
+    "cpf": "44384653423",
+    "nascimento": "2004-03-15",
+    "emailpaciente": "adaylsonevaristo@gmail.com",
+    "contato": "40028922",
+    "genero": "masculino",
+    "altura": 1.7,
+    "peso": 70,
+    "fisico": "?",
+    "objetivo": "?",
+    "habitos": "?",
+    "estrategia": "?",
+    "criacao": "2022-06-09"
+}
+
+response
+{
+    "nome": "Adaylson Arcanjo Evaristo",
+    "cpf": "44384653423",
+    "nascimento": "2004-03-15",
+    "emailpaciente": "adaylsonevaristo@gmail.com",
+    "contato": "40028922",
+    "genero": "masculino",
+    "altura": 1.7,
+    "peso": 70,
+    "fisico": "?",
+    "objetivo": "?",
+    "habitos": "?",
+    "estrategia": "?",
+    "criacao": "2022-06-09"
+}
+
+(3) PUT          /consulta/:id
+
+request
+{
+    "nome": "",
+    "cpf": "",
+    "nascimento": "2004-03-15",
+    "emailpaciente": "",
+    "contato": "",
+    "genero": "",
+    "altura": 1.7,
+    "peso": 70,
+    "fisico": "",
+    "objetivo": "",
+    "habitos": "",
+    "estrategia": "",
+    "criacao": "2022-06-09"
+}
+
+response (204)
+--sem conteudo
+
+(4) DELETE /consulta/:id
+
+response(204)
+
+
+(5)  GET   /consulta
+
+response
+[
+    {
+        "nome": "Adaylson Arcanjo Evaristo",
+        "cpf": "44384653423",
+        "nascimento": "2004-03-15",
+        "emailpaciente": "adaylsonevaristo@gmail.com",
+        "contato": "40028922",
+        "genero": "masculino",
+        "altura": 1.7,
+        "peso": 70,
+        "fisico": "?",
+        "objetivo": "?",
+        "habitos": "?",
+        "estrategia": "?",
+        "criacao": "2022-06-09"
+    }
+]
+
+(6) /GET      /consulta/busca?nome=xx
+
+response
+[
+    {
+        "nome": "Adaylson Arcanjo Evaristo",
+        "cpf": "44384653423",
+        "nascimento": "2004-03-15",
+        "emailpaciente": "adaylsonevaristo@gmail.com",
+        "contato": "40028922",
+        "genero": "masculino",
+        "altura": 1.7,
+        "peso": 70,
+        "fisico": "?",
+        "objetivo": "?",
+        "habitos": "?",
+        "estrategia": "?",
+        "criacao": "2022-06-09"
+    }
+]
+
+
+(7)(6) /GET      /consulta/:id
+
+response
+
+{
+    "nome": "Adaylson Arcanjo Evaristo",
+    "cpf": "44384653423",
+    "nascimento": "2004-03-15",
+    "emailpaciente": "adaylsonevaristo@gmail.com",
+    "contato": "40028922",
+    "genero": "masculino",
+    "altura": 1.7,
+    "peso": 70,
+    "fisico": "?",
+    "objetivo": "?",
+    "habitos": "?",
+    "estrategia": "?",
+    "criacao": "2022-06-09"
+}

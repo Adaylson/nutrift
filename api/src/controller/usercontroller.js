@@ -3,7 +3,7 @@ import { login }  from '../repository/userrepository.js'
 
 const server = Router();
 
-server.post('/usuario/login', async  (req, resp )  => {
+server.post('/login', async  (req, resp )  => {
     try{
         const { email, senha } = req.body;
         const liz = await login(email, senha)

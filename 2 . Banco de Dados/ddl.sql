@@ -1,12 +1,12 @@
 create database nutrifit;
 
-use NUTRIFIT;
+use nutrifit;
 
 create table tb_login(
     id_login         int primary key auto_increment,
     nm_usuario       varchar(200),
     ds_email         varchar(200),
-    nm_senha         varchar(20)
+    ds_senha         varchar(20)
 );
 
 
