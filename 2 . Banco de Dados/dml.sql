@@ -2,7 +2,7 @@ USE nutrifit;
 
 
 INSERT INTO tb_login (nm_usuario, ds_email, ds_senha)
-     VALUES ('admin', 'admin@admin.com.br', '1234');
+     VALUES ('admin', 'nutri@admin.com.br', '1234');
 
 
 
@@ -23,18 +23,18 @@ INSERT INTO tb_consulta (id_consulta, nm_nome, ds_cpf, dt_nascimento, ds_emailpa
 
 -- alterar consulta
 UPDATE tb_consulta
-   SET nm_nome             ='',
+   SET nm_nome          ='',
     ds_cpf              ='',
     dt_nascimento       ='1111-11-11',
-    ds_emailpaciente      ='',
+    ds_emailpaciente    ='',
     ds_contato          ='',
     ds_genero           ='',
     vl_altura           =0,
     vl_peso             =0,
     ds_fisico           ='',
-    ds_objetivo            ='',
-    ds_habitos             ='',
-    ds_estrategia         ='',
+    ds_objetivo         ='',
+    ds_habitos          ='',
+    ds_estrategia       ='',
     dt_criacao          ='1111-11-11'
  WHERE id_consulta = 1;
 
@@ -43,39 +43,39 @@ UPDATE tb_consulta
 
 -- remover consulta
 DELETE FROM tb_consulta 
-      WHERE tb_consulta = 1;
+      WHERE id_consulta = 1;
 
 
 
 
 --  consultar       
-SELECT id_consulta            id,
-       nm_nome                 nome,
+SELECT id_consulta          id,
+       nm_nome              nome,
        ds_cpf               cpf,
-       dt_nascimento           nascimento,
-       ds_emailpaciente      emailpaciente,
-       ds_contato              contato,
-       ds_genero               genero,
-       vl_altura               altura,
-       vl_peso                 peso,
-       ds_fisico               fisico
+       dt_nascimento        nascimento,
+       ds_emailpaciente     emailpaciente,
+       ds_contato           contato,
+       ds_genero            genero,
+       vl_altura            altura,
+       vl_peso              peso,
+       ds_fisico            fisico
   FROM tb_consulta;
   
--- Cconsultar por nome
-SELECT id_consulta            id,
-       nm_nome                 nome,
+-- Cconsultar por CPF
+SELECT id_consulta          id,
+       nm_nome              nome,
        ds_cpf               cpf,
-       dt_nascimento           nascimento,
-       ds_emailpaciente      emailpaciente,
-       ds_contato              contato,
-       ds_genero               genero,
-       vl_altura               altura,
-       vl_peso                 peso,
-       ds_fisico               fisico,
-       ds_objetivo            objetivo,
-        ds_habitos             habitos,
-        ds_estrategia         estrategi,
+       dt_nascimento        nascimento,
+       ds_emailpaciente     emailpaciente,
+       ds_contato           contato,
+       ds_genero            genero,
+       vl_altura            altura,
+       vl_peso              peso,
+       ds_fisico            fisico,
+       ds_objetivo          objetivo,
+        ds_habitos          habitos,
+        ds_estrategia       estrategi,
         dt_criacao          criacao
   FROM tb_consulta
- WHERE nm_consulta            like '%a%';
+ WHERE ds_cpf           	like '%a%';
  
