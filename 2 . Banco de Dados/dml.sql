@@ -8,11 +8,11 @@ INSERT INTO tb_login (nm_usuario, ds_email, ds_senha)
 
 
 select id_login         id,
-       nm_usuario        nome,
-       ds_email            email
+       nm_usuario       nome,
+       ds_email         email
   from tb_login
- where ds_email         = 'admin@admin.com.br'
-   and ds_senha            = '1234';
+ where ds_email         ='nutri@admin.com.br'
+   and ds_senha         ='1234';
 
 
 
