@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { alterarConsulta, inserirConsulta } from '../repository/respository.js'; 
+import { alterarConsulta, inserirConsulta, listarConsultas, listarConsultasid, listarConsultasnome } from '../repository/respository.js'; 
 
 const server = Router();
 
@@ -35,6 +35,49 @@ server.put('/consulta', async (req, resp) => {
 
 
 })
+
+server.get('/consultar', async (req, resp) =>{
+    try{
+        const resposta = await listarConsultas();
+
+        resp.send(resposta);
+
+    }   catch(err){
+        resp.status(400).send({
+            erro:err.message
+        })
+    }
+})
+
+server.get('/consultar/nome', async (req, resp) =>{
+    try{
+        const { nome } = req.query;
+        const resposta = await listarConsultasnome(nome);
+
+        resp.send(resposta);
+
+    }   catch(err){
+        resp.status(400).send({
+            erro:err.message
+        })
+    }
+})
+
+server.get('/consultar/:id', async (req, resp) =>{
+    try{
+        const { id } = req.params;
+        const resposta = await listarConsultasid(id);
+
+        resp.send(resposta);
+
+    }   catch(err){
+        resp.status(400).send({
+            erro:err.message
+        })
+    }
+})
+
+
 
 export default server;
 
