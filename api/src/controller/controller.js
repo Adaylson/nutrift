@@ -1,13 +1,13 @@
 import { Router } from 'express';
-import { inserirConsulta } from '../repository/respository.js'; 
+import { alterarConsulta, inserirConsulta } from '../repository/respository.js'; 
 
 const server = Router();
 
 server.post('/consulta', async (req, resp) => {
     try{
-        const {nome, cpf, nascimento, email, contato, genero, altura, peso, fisico, objetivo, formularios, estrategia, criacao} = req.body
+        const a = req.body;
 
-        const c = await inserirConsulta(nome, cpf, nascimento, email, contato, genero, altura, peso, fisico, objetivo, formularios, estrategia, criacao)
+        const c = await inserirConsulta(a);
 
         resp.send(c)
 
@@ -18,5 +18,23 @@ server.post('/consulta', async (req, resp) => {
     }
 })
 
-export default server
+server.put('/consulta', async (req, resp) => {
+    try{
+        const a = req.body
+
+        const b = alterarConsulta(a);
+
+        resp.send(b)
+    }catch(err){
+        resp.status(404).send({
+            erro: err.message
+        })
+
+
+    }
+
+
+})
+
+export default server;
 

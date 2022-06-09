@@ -10,13 +10,10 @@ server.post('/usuario/login', async  (req, resp )  => {
 
         if(!liz)
             throw new Error ('Credenciais invalidas')
-
-
         resp.send(liz)
     }catch(err){
         resp.status(401).send({
             erro:err.message
-
         })
 
     }
