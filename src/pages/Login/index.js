@@ -61,6 +61,9 @@ export default function IIndex() {
                     
                     <input type="password" className="input-usuario" name="usuario" value={senha} onChange={e => setSenha(e.target.value) } />
                     
+                    <div className='text-invalid'>
+                        {erro}
+                    </div>
 
                 </div>
                 <div className="Div-Button">
