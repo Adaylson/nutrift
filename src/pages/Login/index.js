@@ -18,11 +18,13 @@ export default function IIndex() {
     async function entrarClick() {
         try { 
             const t = await axios.post('http://localhost:5000/login', {
-            emailo: email,
+            email: email,
             senha: senha
         });
 
             navigate('/adm');
+
+                
         
         } catch (err) {
             if (err.response.status === 401) {
@@ -59,14 +61,16 @@ export default function IIndex() {
                     
                     <input type="password" className="input-usuario" name="usuario" value={senha} onChange={e => setSenha(e.target.value) } />
                     
+
                 </div>
                 <div className="Div-Button">
-                    <Link to='../adm'><button className="botton" onClick={entrarClick} >ENTRAR</button></Link> 
+                    <button className="botton" onClick={entrarClick} >ENTRAR</button> 
                 </div>
+
 
                 
             </div>
-        <div className='textsep'>Seja bem-vindo, novamente...</div>
+        <div className='textsep'>Seja bem-vindo!!</div>
 
     </main>
     )
