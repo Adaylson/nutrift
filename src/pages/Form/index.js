@@ -24,9 +24,9 @@ export default function form() {
                         <div className='div-text-emissao-card2'>
                             <p className='dataEmissao-card2'>Data de Emissão: 00/00/0000</p>
                         </div>
-
-                        <h1 className='titulo-cabecalho-card2'>Informações do Paciente</h1>
-
+                        <div className='div-titulo-cabecalho-card2'>
+                            <h1 className='titulo-cabecalho-card2'>Informações do Paciente</h1>
+                        </div>
                     </div>
                 </div>
 
@@ -88,14 +88,14 @@ export default function form() {
 
                             <div className='div-inputEtext-masc'>
                                 <div className='alinhar-input-masc'>
-                                    <input type="radio" className='input-masc-infoPaciente' name="input masc"/>
+                                    <input type="radio" className='input-masc-infoPaciente' name="input Genero"/>
                                 </div>
                                 <div className='text-input-masc'>Masc</div>  
                             </div>
 
                             <div className='div-inputEtext-fem'>
                                 <div className='alinhar-input-fem'>
-                                    <input type="radio" className='input-fem-infoPaciente' name="input Feminino"/>
+                                    <input type="radio" className='input-fem-infoPaciente' name="input Genero"/>
                                 </div>
                                 <div className='text-input-fem'>Fem</div>  
                             </div>

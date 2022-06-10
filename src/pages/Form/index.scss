@@ -11,7 +11,7 @@
     input {
         border: none;
         border-radius: 5px;
-        background-color: #ffffff;  
+        background-color: #f6f6f6;  
     }
 
     display: flex;
@@ -43,7 +43,9 @@
     }
 
     .nutrifit-text-header {
+        font-size: 1.3em;
 
+        color: #000000;
     }
 
     .img-planta {
@@ -61,7 +63,7 @@
 
         border-radius: 41px;
 
-        background-color: #E1E1E1;
+        background-color: rgb(236, 230, 240);
 
         width: 113em;
         height: 59em;
@@ -453,7 +455,7 @@
     }
 
     .input-habitosAlimentares-planodeNutricao {
-        width: 20em;
+        width: 21em;
         height: 10em;
     }
 
@@ -472,7 +474,7 @@
 
         border-radius: 3.5em;
         
-        background:#7EE087;
+        background: #97FDA0;
 
         width: 10em;
         height: 3em;
@@ -487,3 +489,4 @@
         transition: width, 0.5s;
     }
 }
+    
