@@ -116,3 +116,32 @@ export async function deletar(id){
     const resposta = con.query(comando, [id]);
     return resposta.affectedRows;
 }
+
+
+// consulta cpf #######################################################################################
+
+export async function buscarCpf(cpf){
+    const comando = 
+    `
+    SELECT id_consulta          id,
+       nm_nome                 nome,
+       ds_cpf                  cpf,
+       dt_nascimento           nascimento,
+       ds_emailpaciente        emailpaciente,
+       ds_contato              contato,
+       ds_genero               genero,
+       vl_altura               altura,
+       vl_peso                 peso,
+       ds_fisico               fisico,
+       ds_objetivo             objetivo,
+       ds_habitos              habitos,
+       ds_estrategia          estrategi,
+       dt_criacao             criacao
+       FROM tb_consulta
+       WHERE ds_cpf           	like ?;
+    `
+
+    const [resposta] = await con.query(comando, [cpf]);
+
+    return resposta[0];
+}

@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { alterarConsulta, deletar, inserirConsulta, listarConsultas, listarConsultasid, listarConsultasnome } from '../repository/consultaRespository.js'; 
+import { alterarConsulta, buscarCpf, deletar, inserirConsulta, listarConsultas, listarConsultasid, listarConsultasnome } from '../repository/consultaRespository.js'; 
 
 const server = Router();
 
@@ -108,6 +108,25 @@ server.delete('/deletar/:id', async (req, resp) =>{
     }
 })
 
+
+
+// consulta cpf ############################################################################################
+
+server.get('/consulta2/:cpf', async (req, resp) => {
+        try{
+            const { cpf } = req.params.cpf;
+
+            const resposta = await buscarCpf(cpf);
+
+            resp.send(resposta);
+
+        }catch(err){
+            resp.status(400).send({
+                erro: err.message
+            })
+        }
+    }
+)
 
 export default server;
 
