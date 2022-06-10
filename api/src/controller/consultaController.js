@@ -114,7 +114,7 @@ server.delete('/deletar/:id', async (req, resp) =>{
 
 server.get('/consulta2/:cpf', async (req, resp) => {
         try{
-            const { cpf } = req.params.cpf;
+            const { cpf } = req.params;
 
             const resposta = await buscarCpf(cpf);
 
