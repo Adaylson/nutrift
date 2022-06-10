@@ -1,8 +1,8 @@
 import 'dotenv/config'
 import express from 'express'
 import cors from 'cors'
-import userController from './controller/usercontroller.js'
-import Controller from './controller/controller.js'
+import userController from './controller/loginController.js'
+import Controller from './controller/consultaController.js'
 
 const server = express();
 server.use(cors());

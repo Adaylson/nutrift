@@ -17,28 +17,27 @@ export async function inserirConsulta(consul){
 
 //alterar consulta ###################################################################################
 
-export async function alterarConsulta(consul){
+export async function alterarConsulta(id, consulta){
     const comando =  `
     UPDATE tb_consulta
-    SET 
-        nm_nome             ='?',
-        ds_cpf              ='?',
-        dt_nascimento       ='?',
-        ds_emailpaciente    ='?',
-        ds_contato          ='?',
-        ds_genero           ='?',
-        vl_altura           = ?,
-        vl_peso             = ?,
-        ds_fisico           ='?',
-        ds_objetivo         ='?',
-        ds_habitos          ='?',
-        ds_estrategia       ='?',
-        dt_criacao          ='?'
-     WHERE id_consulta      ='?'
+    SET nm_nome             =?,
+        ds_cpf              =?,
+        dt_nascimento       =?,
+        ds_emailpaciente    =?,
+        ds_contato          =?,
+        ds_genero           =?,
+        vl_altura           =?,
+        vl_peso             =?,
+        ds_fisico           =?,
+        ds_objetivo         =?,
+        ds_habitos          =?,
+        ds_estrategia       =?,
+        dt_criacao          =?
+     WHERE id_consulta      =?
     `
 
-    const [resp] = await con.query(comando, [consul.nome, consul.cpf, consul.nascimento, consul.email, consul.contato, consul.genero, consul.altura, consul.peso, consul.fisico, consul.objetivo, consul.formularios, consul.estrategia, consul.criacao, consul.id]);
-    return resp[0];
+    const [resp] = await con.query(comando, [consulta.nome, consulta.cpf, consulta.nascimento, consulta.email, consulta.contato, consulta.genero, consulta.altura, consulta.peso, consulta.fisico, consulta.objetivo, consulta.formularios, consulta.estrategia, consulta.criacao, id]);
+    return resp.affectedRows;
 }
 
 //listar consultas ###################################################################################
@@ -105,3 +104,15 @@ export async function listarConsultasnome(nome){
     const [consulta] = await con.query(comando, [ `%${nome}%` ]);
     return consulta;
 } 
+
+
+//deletar consulta ###################################################################################
+
+export async function deletar(id){
+    const comando =`
+        DELETE FROM     tb_consulta
+              WHERE     id_consulta = ?`;
+
+    const resposta = con.query(comando, [id]);
+    return resposta.affectedRows;
+}
