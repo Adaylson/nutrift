@@ -11,5 +11,5 @@ export async function login(email, senha) {
         senha: senha
     });
 
-    return r.data;
+    return t.data;
 }
