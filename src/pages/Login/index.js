@@ -1,8 +1,9 @@
 
-import axios from 'axios'
+import { login } from '../../api/usuarioApi'
 import { useNavigate } from 'react-router-dom'
 
-import { useState } from 'react'
+import LoadingBar from 'react-top-loading-bar'
+import { useState, useRef } from 'react'
 
 import './index.scss';
 import { Link } from 'react-router-dom';
@@ -12,21 +13,28 @@ export default function IIndex() {
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
     const [erro, setErro] = useState('');
+    const [carregando, setCarregando] = useState(false);
+
 
     const navigate= useNavigate();
+    const ref = useRef(); 
 
     async function entrarClick() {
+        ref.current.continuousStart();
+        setCarregando(true);
+
         try { 
-            const t = await axios.post('http://localhost:5000/login', {
-            email: email,
-            senha: senha
-        });
 
+        const t = await login(email, senha);
+
+        setTimeout(( ) => {
             navigate('/adm');
-
-                
+        }, 3000);
         
         } catch (err) {
+            ref.current.complete();
+            setCarregando(false);
+
             if (err.response.status === 401) {
 
                 setErro(err.response.data.erro);
@@ -39,6 +47,7 @@ export default function IIndex() {
 
     return(
     <main className="Main">
+        <LoadingBar color='#f11946' ref={ref} />
         
     <div className='branco'> 
 
@@ -67,7 +76,7 @@ export default function IIndex() {
 
                 </div>
                 <div className="Div-Button">
-                    <button className="botton" onClick={entrarClick} >ENTRAR</button> 
+                    <button className="botton" onClick={entrarClick} disabled={carregando}>ENTRAR</button> 
                 </div>
 
 
