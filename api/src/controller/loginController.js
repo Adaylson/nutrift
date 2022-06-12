@@ -9,7 +9,7 @@ server.post('/login', async  (req, resp )  => {
         const liz = await login(email, senha)
 
         if(!liz)
-            throw new Error ('Credenciais invalidas')
+            throw new Error ('Credenciais inválidas')
         resp.send(liz)
     }catch(err){
         resp.status(401).send({
