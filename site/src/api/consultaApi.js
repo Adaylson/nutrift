@@ -1,6 +1,6 @@
 import axios from 'axios'
 const api = axios.create({
-    baseURL: 'http://localhost:5000'
+    baseURL: 'http://localhost:5001'
 })
 
 export async function cadastrarCliente(nome, email, cpf, peso, objetivo, estrategia, altura, fisico, telefone, genero, habitos, criacao, nascimento, usuario){
@@ -10,7 +10,7 @@ export async function cadastrarCliente(nome, email, cpf, peso, objetivo, estrate
         nascimento: nascimento,
         email: email,
         contato: telefone,
-        genero: genero,
+        genero: genero ? 'Feminino' : 'Masculino',
         altura: altura,
         peso: peso,
         fisico: fisico,

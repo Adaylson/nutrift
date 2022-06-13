@@ -124,14 +124,14 @@ export default function Form() {
 
                             <div className='div-inputEtext-masc'>
                                 <div className='alinhar-input-masc'>
-                                    <input type="checkbox" className='input-masc-infoPaciente' name="input Genero" checked={genero1} onChange={e => setGenero1(e.target.checked)}/>
+                                    <input type="radio" className='input-masc-infoPaciente' name="input Genero" checked={genero1} onChange={e => setGenero1(e.target.checked)}/>
                                 </div>
                                 <div className='text-input-masc'>Masc</div>  
                             </div>
 
                             <div className='div-inputEtext-fem'>
                                 <div className='alinhar-input-fem'>
-                                    <input type="checkbox" className='input-fem-infoPaciente' name="input Genero" checked={genero} onChange={e => setGenero(e.target.checked)}/>
+                                    <input type="radio" className='input-fem-infoPaciente' name="input Genero" checked={genero} onChange={e => setGenero(e.target.checked)}/>
                                 </div>
                                 <div className='text-input-fem'>Fem</div>  
                             </div>
