@@ -15,7 +15,12 @@ export default function adm() {
             <main>
 
                 <div className="menu">
-                    <Link to='../form' className='cadastro'>Adicionar Consulta</Link>
+                <div className='img-planta'></div>
+                
+                <p className='nutrifit-text'>NUTRIFIT</p>
+                    <Link to='../home' className='cadastro'>HOME</Link>
+                    <Link to='../form' className='cadastro'>Cadastrar</Link>
+                    <Link to='' className='cadastro'>Consulta</Link>
                 </div>
 
                 <div className="areacard">
