@@ -42,6 +42,7 @@ export default function adm() {
                                 </div>
                             </div>
                         </div>
+                        
                         <div className="Card">
                             <div className="aling1">
                                 <div className="agrup1">
@@ -65,6 +66,7 @@ export default function adm() {
                             </div>
                         </div>
                     </div>
+                    
                     <div className="agrupar2cards">
                         <div className="Card">
                             <div className="aling1">
