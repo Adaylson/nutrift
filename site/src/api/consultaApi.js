@@ -22,3 +22,15 @@ export async function cadastrarCliente(nome, email, cpf, peso, objetivo, estrate
 
     return resposta.data;
 }
+
+
+export async function listarConsultas(){
+    const resposta = await api.get('/consultar');
+    return resposta.data;
+}
+
+export async function removerConsulta(id){
+    const resposta = await api.delete(`/deletar/${id}`);
+    return resposta.status;
+}
+

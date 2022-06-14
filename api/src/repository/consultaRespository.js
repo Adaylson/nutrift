@@ -48,13 +48,15 @@ export async function listarConsultas(){
     SELECT id_consulta          id,
            nm_nome              nome,
            ds_cpf               cpf,
+           dt_criacao           criado,
            dt_nascimento        nascimento,
            ds_emailpaciente     emailpaciente,
            ds_contato           contato,
            ds_genero            genero,
            vl_altura            altura,
            vl_peso              peso,
-           ds_fisico            fisico
+           ds_fisico            fisico,
+           ds_objetivo          objetivo
       FROM tb_consulta;`;
 
     const [consulta] = await con.query(comando);
@@ -113,7 +115,7 @@ export async function deletar(id){
         DELETE FROM     tb_consulta
               WHERE     id_consulta = ?`;
 
-    const resposta = con.query(comando, [id]);
+    const [resposta] = await con.query(comando, [id]);
     return resposta.affectedRows;
 }
 
