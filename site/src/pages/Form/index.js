@@ -16,8 +16,8 @@ export default function Form() {
     const [peso, setPeso] = useState('');
     const [objetivo, setObjetivo] = useState('');
     const [estrategia, setEstrategia] = useState('');
-    const [altura, setAltura] = useState(0);
-    const [fisico, setFisico] = useState(0);
+    const [altura, setAltura] = useState('');
+    const [fisico, setFisico] = useState('');
     const [telefone, setTelefone] = useState('');
     const [genero1, setGenero1] = useState('');
     const [genero, setGenero] = useState('');
@@ -92,7 +92,7 @@ export default function Form() {
                         <div className='alinhar-textEinput-peso'>
                             <div className='text-input-peso'>Peso</div>
                             <div className='alinhar-input-peso'>
-                                <input type="text" className='input-peso-infoPaciente' name="input peso" value={peso} onChange={e => setPeso(e.target.value)}/>
+                                <input type="text" placeholder='Kgs' className='input-peso-infoPaciente' name="input peso" value={peso} onChange={e => setPeso(e.target.value)}/>
                             </div>
                         </div>
                     </div>
@@ -101,7 +101,7 @@ export default function Form() {
                         <div className='alinhar-textEinput-altura'>
                             <div className='text-input-altura'>Altura</div>
                             <div className='alinhar-input-altura'>
-                                <input type="text" className='input-altura-infoPaciente' name="input Altura" value={altura} onChange={e => setAltura(e.target.value)}/>
+                                <input type="text" className='input-altura-infoPaciente' placeholder='Metros' name="input Altura" value={altura} onChange={e => setAltura(e.target.value)}/>
                             </div>
                         </div>
 

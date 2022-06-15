@@ -29,7 +29,7 @@ export default function home() {
                         <p className='text2-f2'>
                             Cada paciente tem sua história, seu tempo disponível e seus gostos <br/> alimentares,<br/>
                             assim, a estratégia da consultoria nutricional é 100% personalizada,<br/>
-                            não trabalhamos complanos alimentares `pré-prontos`` na consulta, o <br/> cardápio é feito para <br/>
+                            não trabalhamos complanos alimentares "pré-prontos" na consulta, o <br/> cardápio é feito para 
                             cada paciente!
                         </p>
                         <p className='text3-f2'>

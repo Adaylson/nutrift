@@ -138,14 +138,21 @@
         color: #7EE087;
         font-size: 30px;
         width: 19em;
+        font-family:'Bellota Text', sans-serif;
+        margin-right: 10px;
+
     }
     .text2-f2{
-        width: 30em;
+        width: max-content;
         text-align: center;
+        margin-top: 20px;
+        font-family:'Bellota Text', sans-serif;
     }
     .text3-f2{
-        width: 30em;
+        width: max-content;
         text-align: center;
+        margin-top: 30px;
+        font-family:'Bellota Text', sans-serif;
     }
     .cont-main-faixa3{
         display: flex;
