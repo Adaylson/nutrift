@@ -78,7 +78,6 @@ export default function Index() {
                 <p className='nutrifit-text'>NUTRIFIT</p>
                     <Link to='../home' className='cadastro'>HOME</Link>
                     <Link to='../form' className='cadastro'>Cadastrar</Link>
-                    <Link to='' className='cadastro'>Consulta</Link>
                     <div className='div-sair' onClick={sairClick} >Sair</div>
                 </div>
 

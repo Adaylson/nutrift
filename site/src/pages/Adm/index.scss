@@ -81,8 +81,8 @@
     
     .areacard{
         display: flex;
-        flex-direction: column;
-    
+        flex-direction: row;
+        
         
         background: linear-gradient(180deg, #ECECEC 0%, #F5F5F5 100%);
     
@@ -108,7 +108,8 @@
         width: 25em;
         height: 11em;
     
-        margin-top: 4em;
+        margin-left: 10vh;
+        margin-top: 4.5em;
         padding: 2em;
     }
     .Card:hover{

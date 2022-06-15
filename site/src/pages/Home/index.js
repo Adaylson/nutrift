@@ -142,7 +142,7 @@ export default function home() {
                         </h1>
                         <p id='botom' className='text-cont3'>
                         Email:<br/> 
-                        consulta@nutricionistacarolfaria.com.br<br/> 
+                        consulta@nutrifit.com.br<br/> 
                         Telefone:(11) 9-9801-0101
                         </p>
                         <p className='text2-cont3'>
