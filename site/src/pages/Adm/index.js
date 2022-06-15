@@ -70,7 +70,7 @@ export default function Index() {
                 <img src="/assets/images/magnifying-glass-svgrepo-com 1.svg" alt="buscar" className='lupa'/>
             </header>
 
-            <main>
+            <main className='paginareal'>
 
                 <div className="menu">
                 <div className='img-planta'></div>
@@ -78,10 +78,14 @@ export default function Index() {
                 <p className='nutrifit-text'>NUTRIFIT</p>
                     <Link to='../home' className='cadastro'>HOME</Link>
                     <Link to='../form' className='cadastro'>Cadastrar</Link>
-                    <div className='div-sair' onClick={sairClick} >Sair</div>
+                    <Link to='../form' className='cadastro'>Consultar</Link>
+                        <div className='espaçamento'>
+                            <div className='div-sair' onClick={sairClick} >Sair</div>
+                        </div>
                 </div>
 
                 <div className="areacard">
+                    <div className='espaçocards'>
                     <div className="agrupar2cards">
                         {consulta.map(item=>
                             <div className="Card">
@@ -108,7 +112,7 @@ export default function Index() {
                                 </div>
                             </div>
                         )}
-                        
+                    </div>    
                     </div>
                 </div>
             </main>

@@ -29,6 +29,7 @@
 
         cursor:default;
     }
+
     .home:hover{
         text-decoration: underline;
     }
@@ -57,7 +58,7 @@
         flex-direction: column;
         align-items: center;
         
-    
+        margin-top: 25px;
         padding: 2em;
         background-color: #5D5F5D;
         box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
@@ -70,6 +71,11 @@
     }
     .cadastro:hover{
         text-decoration: underline;
+    }
+    .espaçamento{
+        margin-top: 85vh;
+        position: absolute;
+
     }
 
     .div-sair {
@@ -91,12 +97,20 @@
         height: 96vh;
          
     }
+
+    .espaçocards{
+        margin-right: 20px;
+        margin-top: 30px;
+    }
     
     .agrupar2cards{
         display: flex;
         flex-direction: row; 
         justify-content:space-evenly;
         flex-wrap: wrap;
+        height:  100vh;
+        background: linear-gradient(180deg, #ECECEC 0%, #F5F5F5 100%);
+
     }
     
     .Card{
