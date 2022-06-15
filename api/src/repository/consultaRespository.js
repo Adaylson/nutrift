@@ -4,13 +4,15 @@ import { con } from "./connection.js";
 //inserir consulta ###################################################################################
 
 
-export async function inserirConsulta(consul){
+export async function inserirConsulta(consulta) {
     const comando = `
     INSERT INTO tb_consulta (nm_nome, ds_cpf, dt_nascimento, ds_emailpaciente, ds_contato, ds_genero, vl_altura, vl_peso, ds_fisico, ds_objetivo, ds_habitos, ds_estrategia, dt_criacao)
     VALUES                  ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, sysdate());
     `
 
-    const [resposta] = await con.query(comando, [consul.nome, consul.cpf, consul.nascimento, consul.email, consul.contato, consul.genero, consul.altura, consul.peso, consul.fisico, consul.objetivo, consul.habitos, consul.estrategia, consul.criacao]);
+    const [resposta] = await con.query(comando, [consulta.nome, consulta.cpf, consulta.nascimento, consulta.email, consulta.contato, consulta.genero, consulta.altura, consulta.peso, consulta.fisico, consulta.objetivo, consulta.habitos, consulta.estrategia, consulta.criacao]);
+    consulta.id = resposta.insertId
+
     return resposta[0];
 
 }
