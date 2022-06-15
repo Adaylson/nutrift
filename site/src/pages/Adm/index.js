@@ -1,4 +1,9 @@
+import storage from 'local-storage'
+
+import { useNavigate } from 'react-router-dom';
+
 import './index.scss';
+
 import { Link } from 'react-router-dom';
 import { removerConsulta, listarConsultas } from '../../api/consultaApi';
 import React, {useEffect, useState} from 'react'
@@ -39,6 +44,24 @@ export default function Index() {
         console.log(consulta)
     }, [])
 
+    const [usuario, setUsuario] = useState('');
+    const navigate = useNavigate();
+
+    function sairClick() {
+        storage.remove('usuario-logado')
+        navigate('/login');
+    }
+
+    useEffect(() => {
+        if(!storage('usuario-logado')) {
+            navigate('/login');
+        } else {
+            const usuarioLogado = storage('usuario-logado');
+            setUsuario(usuarioLogado.nome);
+        }
+        
+    }, [])
+
     return(
         <main className='page-adm'>
             <header>
@@ -56,6 +79,7 @@ export default function Index() {
                     <Link to='../home' className='cadastro'>HOME</Link>
                     <Link to='../form' className='cadastro'>Cadastrar</Link>
                     <Link to='' className='cadastro'>Consulta</Link>
+                    <div className='div-sair' onClick={sairClick} >Sair</div>
                 </div>
 
                 <div className="areacard">

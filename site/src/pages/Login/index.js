@@ -1,6 +1,7 @@
 
 import { login } from '../../api/usuarioApi'
 import { useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 
 import storage from 'local-storage'
 import LoadingBar from 'react-top-loading-bar'
@@ -19,6 +20,12 @@ export default function IIndex() {
 
     const navigate= useNavigate();
     const ref = useRef(); 
+
+    useEffect(() => {
+        if(storage('usuario-logado')) {
+            navigate('/adm');
+        }
+    }, [])
 
     async function entrarClick() {
         ref.current.continuousStart();
