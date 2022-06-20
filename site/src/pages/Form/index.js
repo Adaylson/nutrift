@@ -8,6 +8,9 @@ import './index.scss';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import Menu from '../../components/menu'
+import Cabeçalho from '../../components/cabecalho'
+
 
 export default function Form() {
     const [nome, setNome] = useState('');
@@ -41,125 +44,103 @@ export default function Form() {
     return(
 
     <main className="page-container">
-         <ToastContainer />
-        <header className='cabecalho-page'>
-            <div className='div-alinhar-logo'>
-                <p className="nutrifit-text-header">NUTRIFIT</p>
-                <div className="img-planta"></div>
-            </div>
-        </header>
-
+        <ToastContainer />
+        <Menu />
         <div className='container1-cards'>
-            <div className='img-card1'></div>
-            <div className='imgesc-card1'></div>
-            
-
-            <div className='card2'>
-                <div className='cabecalho-card2'>
-                    <div className='alihar-cabecalho-card2'>
-                        <div className='div-text-emissao-card2'>
-                            <p className='dataEmissao-card2'>Data de Emissão: 00/00/0000</p>
-                        </div>
-                        <div className='div-titulo-cabecalho-card2'>
-                            <h1 className='titulo-cabecalho-card2'>Informações do Paciente</h1>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='div-inputs-infoPaciente'>
-                    <div className='container1-inputs-infoPaciente'>
-                        <div className='alinhar-textEinput-nome'>
-                            <div className='text-input-nome'>Nome</div>
-                            <div className='alinhar-input-nome'>
-                                <input type="text" className='input-nome-infoPaciente' name="input Nome" value={nome} onChange={e => setNome(e.target.value)}/>  
-                            </div>
-                        </div>
-
-                        <div className='alinhar-textEinput-email'>
-                            <div className='text-input-email'>E-mail</div>
-                            <div className='alinhar-input-email'>
-                                <input type="text" className='input-email-infoPaciente' name="input email" value={email} onChange={e => setemail(e.target.value)}/>
-                            </div>
-                        </div>
-                        
-                        <div className='alinhar-textEinput-cpf'>
-                            <div className='text-input-cpf'>CPF</div>
-                            <div className='alinhar-input-cpf'>
-                                <input type="text" className='input-cpf-infoPaciente' name="input cpf" value={cpf} onChange={e => setCpf(e.target.value)}/>
-                            </div>
-                        </div>
-
-                        <div className='alinhar-textEinput-peso'>
-                            <div className='text-input-peso'>Peso</div>
-                            <div className='alinhar-input-peso'>
-                                <input type="text" placeholder='Kgs' className='input-peso-infoPaciente' name="input peso" value={peso} onChange={e => setPeso(e.target.value)}/>
+            <Cabeçalho />
+            <div className='aling'>
+                <div className='card2'>
+                    <div className='cabecalho-card2'>
+                        <div className='alihar-cabecalho-card2'>
+                            <div className='div-titulo-cabecalho-card2'>
+                                <h1 className='titulo'>Cadastrar Paciente</h1>
                             </div>
                         </div>
                     </div>
 
-                    <div className='container2-inputs-infoPaciente'>
-                        <div className='alinhar-textEinput-altura'>
-                            <div className='text-input-altura'>Altura</div>
-                            <div className='alinhar-input-altura'>
-                                <input type="text" className='input-altura-infoPaciente' placeholder='Metros' name="input Altura" value={altura} onChange={e => setAltura(e.target.value)}/>
-                            </div>
-                        </div>
-
-                        <div className='alinhar-textEinput-tipoFisico'>
-                            <div className='text-input-tipoFisico'>Tipo Físico</div>
-                            <div className='alinhar-input-tipoFisico'>
-                                <input type="text" className='input-tipoFisico-infoPaciente' name="input Tipo fisico" value={fisico} onChange={e => setFisico(e.target.value)}/>
-                            </div>
-                        </div>
-                        
-                        <div className='alinhar-textEinput-telefone'>
-                            <div className='text-input-telefone'>Telefone</div>
-                            <div className='alinhar-input-telefone'>
-                                <input type="text" className='input-telefone-infoPaciente' name="input telefone" value={telefone} onChange={e => setTelefone(e.target.value)}/>
-                            </div>
-                        </div>
-
-                        <div className='alinhar-textEinputs-genero'>
-                            <div className='text-input-genero'>Gênero:</div>
-
-                            <div className='div-inputEtext-masc'>
-                                <div className='alinhar-input-masc'>
-                                    <input type="radio" className='input-masc-infoPaciente' name="input Genero" checked={genero1} onChange={e => setGenero1(e.target.checked)}/>
+                    <div className='div-inputs-infoPaciente'>
+                        <div className='container1-inputs-infoPaciente'>
+                            <div className='alinhar-textEinput'>
+                                <div className='text-input'>Nome</div>
+                                <div className='alinhar-input-nome'>
+                                    <input type="text" className='input-nome-infoPaciente' name="input Nome" value={nome} onChange={e => setNome(e.target.value)}/>  
                                 </div>
-                                <div className='text-input-masc'>Masc</div>  
                             </div>
 
-                            <div className='div-inputEtext-fem'>
-                                <div className='alinhar-input-fem'>
-                                    <input type="radio" className='input-fem-infoPaciente' name="input Genero" checked={genero} onChange={e => setGenero(e.target.checked)}/>
+                            <div className='alinhar-textEinput'>
+                                <div className='text-input'>E-mail</div>
+                                <div className='alinhar-input-email'>
+                                    <input type="text" className='input-email-infoPaciente' name="input email" value={email} onChange={e => setemail(e.target.value)}/>
                                 </div>
-                                <div className='text-input-fem'>Fem</div>  
                             </div>
-                
-                        </div>
-                    </div>
-                </div>
-                    <div className='container-planodeNutricao'>
-                        <div className='cabecalho2-card2'>
-                            <div className='alinhar-titulo-cabecalho2'>
-                                <h1 className='titulo-cabecalho2'>Plano de Nutrição</h1>
+                            
+                            <div className='alinhar-textEinput'>
+                                <div className='text-input'>CPF</div>
+                                <div className='alinhar-input-cpf'>
+                                    <input type="text" className='input-cpf-infoPaciente' name="input cpf" value={cpf} onChange={e => setCpf(e.target.value)}/>
+                                </div>
                             </div>
-                         </div>
 
-                        <div className='div-inputs-planodeNutricao'>
-                            <div className='container1-inputs-planodeNutricao'>
-                                <div className='alinhar-textEinput-objetivo'>
-                                    <div className='text-input-objetivo'>Objetivo:</div>
-                                    <div className='alinhar-input-objetivo'>
-                                        <input type="text" className='input-objetivo-planodeNutricao' name="input Objetivo" value={objetivo} onChange={e => setObjetivo(e.target.value)}/>
+                            <div className='alinhar-textEinput'>
+                                <div className='text-input'>Peso</div>
+                                <div className='alinhar-input-peso'>
+                                    <input type="text" placeholder='Kgs' className='input-peso-infoPaciente' name="input peso" value={peso} onChange={e => setPeso(e.target.value)}/>
+                                </div>
+                            </div>
+                            <div className='alinhar-textEinput'>
+                                <div className='text-input'>Objetivo:</div>
+                                <div className='alinhar-input-objetivo'>
+                                    <input type="text" className='input-objetivo-planodeNutricao' name="input Objetivo" value={objetivo} onChange={e => setObjetivo(e.target.value)}/>
+                                </div>
+                            </div>
+                            <div className='alinhar-textEinput-estrategia'>
+                                <div className='text-input'>Estratégia:</div>
+                                <div className='alinhar-input-estrategia'>  
+                                    <input type="text" className='input-estrategia-planodeNutricao' name="input Estrategia" value={estrategia} onChange={e => setEstrategia(e.target.value)}/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='margin'></div>
+
+                        <div className='container2-inputs'>
+                            <div className='alinhar-textEinput'>
+                                <div className='text-input'>Altura</div>
+                                <div className='alinhar-input-altura'>
+                                    <input type="text" className='input-altura-infoPaciente' placeholder='Metros' name="input Altura" value={altura} onChange={e => setAltura(e.target.value)}/>
+                                </div>
+                            </div>
+
+                            <div className='alinhar-textEinput'>
+                                <div className='text-input'>Tipo Físico</div>
+                                <div className='alinhar-input-tipoFisico'>
+                                    <input type="text" className='input-tipoFisico-infoPaciente' name="input Tipo fisico" value={fisico} onChange={e => setFisico(e.target.value)}/>
+                                </div>
+                            </div>
+                            
+                            <div className='alinhar-textEinput'>
+                                <div className='text-input'>Telefone</div>
+                                <div className='alinhar-input-telefone'>
+                                    <input type="text" className='input-telefone-infoPaciente' name="input telefone" value={telefone} onChange={e => setTelefone(e.target.value)}/>
+                                </div>
+                            </div>
+
+                            <div className='alinhar-textEinputs-genero'>
+                                <div className='text-input'>Gênero:</div>
+
+                                <div className='div-inputEtext'>
+                                    <div className='alinhar-input-masc'>
+                                        <input type="radio" className='input-genero' name="input Genero" checked={genero1} onChange={e => setGenero1(e.target.checked)}/>
                                     </div>
+                                    <div className='text-input-masc'>Masc</div>  
                                 </div>
-                                <div className='alinhar-textEinput-estrategia'>
-                                    <div className='text-input-estrategia'>Estratégia:</div>
-                                    <div className='alinhar-input-estrategia'>  
-                                        <input type="text" className='input-estrategia-planodeNutricao' name="input Estrategia" value={estrategia} onChange={e => setEstrategia(e.target.value)}/>
+
+                                <div className='div-inputEtext'>
+                                    <div className='alinhar-input-fem'>
+                                        <input type="radio" className='input-genero' name="input Genero" checked={genero} onChange={e => setGenero(e.target.checked)}/>
                                     </div>
-                                </div>
+                                    <div className='text-input-fem'>Fem</div>  
+                                </div>  
                             </div>
                             <div className='container2-inputs-planodeNutricao'>
                                 <div className='text-input-habitosAlimentares'>Hábitos Alimentares</div>
@@ -168,14 +149,17 @@ export default function Form() {
                                 </div>
                             </div>
                         </div>
-
-                        <div className='alinhar-button-salvar' >
-                            <button onClick={Salvar} className='button-salvar'>Salvar</button>
-                        </div>
                     </div>
+                        <div className='container-planodeNutricao'>
+
+                            <div className='alinhar-button-salvar'>
+                                <button onClick={Salvar} className='button'>Salvar</button>
+                                <button onClick={Salvar} className='button'>Alterar</button>
+                            </div>
+                        </div>
+                </div>
             </div>
         </div>
-        
     </main>
 
     )

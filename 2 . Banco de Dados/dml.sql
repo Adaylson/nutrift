@@ -17,8 +17,8 @@ select id_login         id,
 
 
 -- nova consulta
-INSERT INTO tb_consulta (id_consulta, nm_nome, ds_cpf, dt_nascimento, ds_emailpaciente, ds_contato, ds_genero, vl_altura, vl_peso, ds_fisico, ds_objetivo, ds_habitos, ds_estrategia, dt_criacao)
-     VALUES (1, 'Adaylson Arcanjo', '32454435', '2004-03-15', 'adaylsonarcanjo@gmail.com', '5675334', 'masculino', 1.70, 70, 'sei la', 'teste', 'teste', 'teste', '2022-06-03');
+  INSERT INTO tb_consulta (id_consulta, nm_nome, ds_cpf, dt_nascimento, ds_emailpaciente, ds_contato, ds_genero, vl_altura, vl_peso, ds_fisico, ds_objetivo, ds_habitos, ds_estrategia, dt_criacao)
+      VALUES (1, 'Adaylson Arcanjo', '32454435', '2004-03-15', 'adaylsonarcanjo@gmail.com', '5675334', 'masculino', 1.70, 70, 'sei la', 'teste', 'teste', 'teste', '2022-06-03');
 
 
 -- alterar consulta

@@ -9,92 +9,60 @@
 
 
 .page-adm{
-    header{
+    display: flex;
+    margin: 0px;
+    box-sizing: border-box;
+
+    font-family: 'um';
+    color:#000000;
+
+    .seila {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .conteudo{
+        min-width: 75.3vw;
+        min-height: 92.5%;
+        background-color: #EDEDED;
+        padding: 4.7em 0em;
+
+        display: flex;
+
+        justify-content: center;
+    }
+
+    .caixa-busca {
+        display: flex;
         justify-content: space-between;
         align-items: center;
-        position: absolute;
-    
-        padding-left: 1em;
-        padding-right: 1em;
-    
-        background: #fff;
-        color: #606060;
-    
 
+        background-color: #fff;
+        padding: 0px 15px;
+        box-shadow: 1px 1px 5px rgb(220, 220, 220);
+        width: 60%;
+        height: 2.5em;
+    }
+    .caixa-busca input {
+        background: none;
+        border: none;
+        padding: 0px;
         width: 100%;
-        height: 3em;
+        font-size: small;
         font-family: um;
-
-        cursor:default;
     }
 
-    .home:hover{
-        text-decoration: underline;
-    }
-    .lupa:hover{
-        cursor: pointer;
-    }
-    
-    
-    main{
-        display: flex;
-        flex-direction: row;    
-    }
-    
-    img{
+    .caixa-busca img{
         height: 1em;
         width: auto;
         cursor: pointer;
+        color: #000000;
     }
 
-    
-    .menu{
-        width: 18vw;
-        height: 100vh;
-    
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-        margin-top: 25px;
-        padding: 2em;
-        background-color: #5D5F5D;
-        box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
-        color: #fff;
-
-    }
-    .cadastro{      
-        font-family: dois;
-        margin-top: 25px;
-    }
-    .cadastro:hover{
-        text-decoration: underline;
-    }
-    .espaçamento{
-        margin-top: 85vh;
-        position: absolute;
-
-    }
-
-    .div-sair {
-        font-family: dois;
-        padding-top: 1.5em;
-
-        cursor: pointer;
-    }
-    
     .areacard{
         display: flex;
         flex-direction: row;
-        
-        
-        background: linear-gradient(180deg, #ECECEC 0%, #F5F5F5 100%);
-    
-    
-        width: 88vw;
-        height: 96vh;
          
     }
 
@@ -108,7 +76,7 @@
         flex-direction: row; 
         justify-content:space-evenly;
         flex-wrap: wrap;
-        height:  100vh;
+        height:  100%;
         background: linear-gradient(180deg, #ECECEC 0%, #F5F5F5 100%);
     }
     
@@ -169,30 +137,5 @@
     
     .p{
         color: #ADFDB4;
-    }    
-
-    .img-planta{
-        background-image: url('../../assets/images/ICONE_FOLHA.png');
-        background-size: 75%;
-        background-repeat: no-repeat;
-        height: 93px;
-        width: 100px;
-        margin-left: 150px;
-        cursor: pointer;
-        text-align: center;
-        margin-top: 30px
-    }
-
-    .nutrifit-text{
-        @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;800&display=swap');
-        font-family: 'Yatra One', sans-serif;
-        font-size: 40px;
-        font-weight:800;
-        text-shadow: black 0em 0.1em 0.4em;
-        color: white;
-        line-height: 110px;     
-        position: absolute;
-        cursor:pointer;
-        margin-top: 30px;
-    }
+    } 
 }

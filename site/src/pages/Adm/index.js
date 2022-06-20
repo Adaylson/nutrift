@@ -8,6 +8,9 @@ import { Link } from 'react-router-dom';
 import { removerConsulta, listarConsultas } from '../../api/consultaApi';
 import React, {useEffect, useState} from 'react'
 
+import Menu from '../../components/menu'
+import Cabeçalho from '../../components/cabecalho'
+
 export default function Index() {
 
     const [consulta, setConsulta] = useState([]);
@@ -64,58 +67,54 @@ export default function Index() {
 
     return(
         <main className='page-adm'>
-            <header>
-                <p>Bem vindo user7754</p>
-                <Link to='../home' className='home'>HOME</Link>
-                <img src="/assets/images/magnifying-glass-svgrepo-com 1.svg" alt="buscar" className='lupa'/>
-            </header>
-
-            <main className='paginareal'>
-
-                <div className="menu">
-                <div className='img-planta'></div>
+            <Menu />
+            <div className='container'>
+                <Cabeçalho />
                 
-                <p className='nutrifit-text'>NUTRIFIT</p>
-                    <Link to='../home' className='cadastro'>HOME</Link>
-                    <Link to='../form' className='cadastro'>Cadastrar</Link>
-                    <Link to='../form' className='cadastro'>Consultar</Link>
-                        <div className='espaçamento'>
-                            <div className='div-sair' onClick={sairClick} >Sair</div>
-                        </div>
-                </div>
+                <div className='conteudo'>
 
-                <div className="areacard">
-                    <div className='espaçocards'>
-                    <div className="agrupar2cards">
-                        {consulta.map(item=>
-                            <div className="Card">
-                                <div className="aling1">
-                                    <div className="agrup1">
-                                        <p>Nome: {item.nome}</p>
-                                        <p>idade: {calcularIdade(item.nascimento)}</p>
-                                        <div className="alturaxpeso">
-                                            <p>altura: {item.altura}</p>
-                                            <p className="peso">Peso: {item.peso}</p>
-                                        </div>
-                                        <p>Objetivo: {item.objetivo}</p>
-                                        <p>Criado: {item.criado.substr(0, 10)}</p>
-                                        <p className="p">Em Processo....</p>
-                                    </div>
-                                    <div className="agrup2">
-                                        <div className="icons">
-                                            <img src="/assets/images/iconmonstr-trash-can-5 1.svg" alt="Remover" onClick={()=>removerConsultaClick(item.id)}/>
-                                            <div className="f"></div>
-                                            <img src="/assets/images/iconmonstr-pencil-4 2.svg" alt="Editar"/> 
-                                        </div>
-                                        <p>Nº {item.id}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        )}
-                    </div>    
+                    <div className='caixa-busca'>
+                        <input type="text" placeholder='Buscar filmes por nome' />
+                        <img src="/assets/images/magnifying-glass-svgrepo-com 1.svg" alt="buscar" className='lupa' />
                     </div>
+                    
+
+
+                    <div className="areacard">
+                        <div className='espaçocards'>
+                            <div className="agrupar2cards">
+                                {consulta.map(item=>
+                                    <div className="Card">
+                                        <div className="aling1">
+                                            <div className="agrup1">
+                                                <p>Nome: {item.nome}</p>
+                                                <p>idade: {calcularIdade(item.nascimento)}</p>
+                                                <div className="alturaxpeso">
+                                                    <p>altura: {item.altura}</p>
+                                                    <p className="peso">Peso: {item.peso}</p>
+                                                </div>
+                                                <p>Objetivo: {item.objetivo}</p>
+                                                <p>Criado: {item.criado.substr(0, 10)}</p>
+                                                <p className="p">Em Processo....</p>
+                                            </div>
+                                            <div className="agrup2">
+                                                <div className="icons">
+                                                    <img src="/assets/images/iconmonstr-trash-can-5 1.svg" alt="Remover" onClick={()=>removerConsultaClick(item.id)}/>
+                                                    <div className="f"></div>
+                                                    <img src="/assets/images/iconmonstr-pencil-4 2.svg" alt="Editar"/> 
+                                                </div>
+                                                <p>Nº {item.id}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>    
+                        </div>
+                    </div>
+
+           
                 </div>
-            </main>
+            </div>
         </main>
     )
 }
